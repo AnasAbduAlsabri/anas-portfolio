@@ -8,7 +8,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    title: "Virtual Teacher AI",
+    description: "An innovative educational tool that reads PDFs and generates voice-over lectures, leveraging AI for accessible learning experiences.",
+    image: "/thumb_images/Virtual Teacher AI.png",
+    tags: ["Next.js", "React", "AI APIs", "Voice Generation"],
+    githubUrl: "https://github.com/AnasAbduAlsabri/Virtual_Teacher_Ai",
+    liveUrl: "https://virtual-teacher-ai-two.vercel.app/"
+  },
   {
+    
     title: "Exchange System",
     description: "A comprehensive web application for currency conversion and real-time transaction management. Built with Flask and WebSockets for live notifications.",
     image: "/thumb_images/Exchange System.png",
@@ -32,14 +41,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AnasAbduAlsabri/Tamayoz_AI",
     liveUrl: "https://github.com/AnasAbduAlsabri/Tamayoz_AI"
   },
-  {
-    title: "Virtual Teacher AI",
-    description: "An innovative educational tool that reads PDFs and generates voice-over lectures, leveraging AI for accessible learning experiences.",
-    image: "/thumb_images/Virtual Teacher AI.png",
-    tags: ["Next.js", "React", "AI APIs", "Voice Generation"],
-    githubUrl: "https://github.com/AnasAbduAlsabri/Virtual_Teacher_Ai",
-    liveUrl: "https://github.com/AnasAbduAlsabri/Virtual_Teacher_Ai"
-  },
+
 
 
 ];
