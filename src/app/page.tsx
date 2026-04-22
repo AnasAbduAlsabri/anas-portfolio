@@ -48,7 +48,7 @@ export default function Home() {
           <div className="flex items-center gap-2 sm:gap-4">
             <nav className="hidden sm:flex items-center gap-6 text-sm font-medium text-muted-foreground">
               <Link href="#projects" className="hover:text-foreground transition-colors">Projects</Link>
-              <Link href="https://github.com/anasalsabri" target="_blank" className="hover:text-foreground transition-colors">GitHub</Link>
+              <Link href="https://github.com/AnasAbduAlsabri" target="_blank" className="hover:text-foreground transition-colors">GitHub</Link>
             </nav>
             <ThemeToggle />
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
                 View My Work
               </Link>
               <Link
-                href="https://github.com/anasalsabri"
+                href="https://github.com/AnasAbduAlsabri"
                 target="_blank"
                 className="inline-flex h-11 items-center justify-center rounded-lg border border-border bg-card px-8 py-2 text-sm font-semibold shadow-sm hover:bg-accent/5 hover:border-accent/30 transition-all gap-2"
               >
