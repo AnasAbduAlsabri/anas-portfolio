@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Terminal, ExternalLink } from "lucide-react"
 import type { Project } from "@/lib/projects"
 import Link from "next/link"
+import Image from "next/image"
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -44,11 +45,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-lg border border-border bg-muted/30">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5 flex items-center justify-center">
-          <Terminal className="h-10 w-10 text-accent/20" />
+      <Link 
+        href={project.liveUrl || project.githubUrl} 
+        target="_blank"
+        className="relative mt-4 block aspect-video w-full overflow-hidden rounded-lg border border-border bg-muted/30 group-hover:border-accent/50 transition-colors"
+      >
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        <div className="absolute inset-0 flex items-center justify-center -z-10">
+          <Terminal className="h-10 w-10 text-accent/10" />
         </div>
-      </div>
+      </Link>
       
       <p className="mt-4 flex-1 text-sm text-muted-foreground leading-relaxed">
         {project.description}
