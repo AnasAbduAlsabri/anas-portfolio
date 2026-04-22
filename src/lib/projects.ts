@@ -40,20 +40,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AnasAbduAlsabri/Virtual_Teacher_Ai",
     liveUrl: "https://github.com/AnasAbduAlsabri/Virtual_Teacher_Ai"
   },
-  {
-    title: "ATM Locator",
-    description: "A real-time geolocation service built to help users find the nearest ATM facilities with precise mapping and availability status.",
-    image: "/thumb_images/ATM Locator.png",
-    tags: ["React", "Google Maps API", "Geolocation", "Tailwind CSS"],
-    githubUrl: "https://github.com/anasalsabri/atm-locator",
-    liveUrl: "https://atm-locator.anasalsabri.org"
-  },
-  {
-    title: "Smart Converter",
-    description: "An advanced multi-utility conversion tool supporting high-precision currency, unit, and scientific conversions with a clean, modern UI.",
-    image: "/thumb_images/Smart Converter.png",
-    tags: ["Next.js", "TypeScript", "Financial APIs", "Modern UI"],
-    githubUrl: "https://github.com/anasalsabri/smart-converter",
-    liveUrl: "https://smart-converter.anasalsabri.org"
-  },
+
+
 ];
